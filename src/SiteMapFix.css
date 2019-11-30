@@ -1,0 +1,4 @@
+/* fix the shadow be transformed by `max-width: 100%` */
+.BMap_shadow img {
+    max-width: unset;
+}

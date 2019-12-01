@@ -1,7 +1,6 @@
 import React from 'react'
 import { Map, Base, Marker, InfoWindow } from 'rc-bmap'
 import SiteDetail from './SiteDetail'
-import './SiteMapFix.css'
 
 function SiteNoInfo() {
     return (

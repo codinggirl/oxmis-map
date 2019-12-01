@@ -11,22 +11,14 @@ function SitePicker(props) {
     }
 
     return (
-        <div style={{
-            width: '100%',
-            padding: '20px'
-        }}>
+        <div>
             <button
                 className="button button-outline"
                 style={{
-                    color: 'blue',
-                    borderColor: 'blue',
                     width: '100%'
                 }}
-                onClick={
-                    () => {
-                        setPickerVisible(!pickerVisible)
-                    }
-                }>选择服务站点</button>
+                onClick={() => setPickerVisible(!pickerVisible)}
+            >选择服务站点</button>
             {pickerVisible && _showPicker(sites, _onSiteSelected)}
         </div>
     )
@@ -48,7 +40,7 @@ function _showPicker(sites, onSiteSelected) {
         const _sitesInTown = obj[town]
         return (
             <div key={i}>
-                <h2>{town}</h2>
+                <strong>{town}</strong>
                 <div className="row">
                     <div className="column">
                         <ul>

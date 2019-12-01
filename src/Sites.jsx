@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import SitePicker from './SitePicker'
 import SiteMap from './SiteMap'
 import loadSitesData from './dataHelper'
-import './milligram.sass'
 
 function SiteContainer(props) {
     // all sites
@@ -28,7 +27,10 @@ function SiteContainer(props) {
     }
 
     return (
-        <div>
+        <div style={{
+            padding: '0 20px',
+            height: '800px'
+        }}>
             <SitePicker sites={sites} onSiteSelected={switchSite} />
             {site && <SiteMap site={site} />}
         </div>

@@ -18,15 +18,8 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          'css-loader',
-        ]
-      },
-      {
-        test: /\.sass$/,
-        use: [
           'style-loader',
           'css-loader',
-          'sass-loader'
         ]
       }
     ]

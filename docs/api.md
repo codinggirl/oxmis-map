@@ -30,8 +30,8 @@ Sample data:
 ```
 [
     {
-        town: 'A',
-        site: '的地方大师傅',
+        town: '乡镇一',
+        site: '服务站点1',
         code: 'AAAAA',
         contact: '4434',
         phone: '343443',
@@ -41,8 +41,8 @@ Sample data:
         imageUrl: 'https://tse1-mm.cn.bing.net/th?id=OET.4a6b40ffb11545fba05444f3a92f994c&w=272&h=272&c=7&rs=1&o=5&pid=1.9'
     },
     {
-        town: 'A',
-        site: '范德萨富士达',
+        town: '乡镇一',
+        site: '服务站点2',
         code: '',
         contact: '',
         phone: '',
@@ -52,8 +52,8 @@ Sample data:
         imageUrl: ''
     },
     {
-        town: 'B',
-        site: '范德萨富士达',
+        town: '乡镇2',
+        site: '服务站点3',
         code: '',
         contact: '',
         phone: '',
@@ -63,8 +63,8 @@ Sample data:
         imageUrl: ''
     },
     {
-        town: 'C',
-        site: '打发士大夫士大夫',
+        town: '乡镇3',
+        site: '服务站点4',
         code: '',
         contact: '',
         phone: '',

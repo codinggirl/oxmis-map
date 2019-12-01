@@ -36,21 +36,31 @@ function _showPicker(sites, onSiteSelected) {
     //     ]
     // }
     const obj = groupBy(sites, 'town')
-    return Object.keys(obj).map((town, i) => {
-        const _sitesInTown = obj[town]
-        return (
-            <div key={i}>
-                <strong>{town}</strong>
-                <div className="row">
-                    <div className="column">
-                        <ul>
-                            {SiteList(_sitesInTown, onSiteSelected)}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        )
-    })
+    return (
+        <div style={{
+            height: '600px',
+            overflowX: 'hidden',
+            overflowY: 'scroll'
+        }}>
+            {
+                Object.keys(obj).map((town, i) => {
+                    const _sitesInTown = obj[town]
+                    return (
+                        <div key={i}>
+                            <strong>{town}</strong>
+                            <div className="row">
+                                <div className="column">
+                                    <ul>
+                                        {SiteList(_sitesInTown, onSiteSelected)}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
 }
 
 function SiteList(sites, onSiteSelected) {

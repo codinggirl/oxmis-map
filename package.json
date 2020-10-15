@@ -30,7 +30,7 @@
     "lodash.groupby": "^4.6.0",
     "milligram": "^1.3.0",
     "rc-bmap": "^1.0.5",
-    "react": "^16.10.2",
+    "react": "^16.14.0",
     "react-dom": "^16.10.2"
   }
 }
